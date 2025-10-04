@@ -1,0 +1,15 @@
+- name: read variables file
+  hosts: local
+  connection: local
+  become : yes
+  course:
+    course.yaml
+  
+  tasks:
+   - name : printing after task
+     ansible.builtin.debug:
+      msg : "{{course}}"
+    
+
+   
+
