@@ -1,5 +1,5 @@
 - name: install and enable nginx
-  hosts: frontend
+  hosts: frontend1
   tasks:
   - name: install
     ansible.builtin.package:
