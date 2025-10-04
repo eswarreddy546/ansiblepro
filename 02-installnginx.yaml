@@ -5,13 +5,13 @@
     ansible.builtin.package:
 
 
-- name: install 
-  ansible.builtin.package:
-    name: nginx
-    state: present
+  - name: install 
+    ansible.builtin.package:
+     name: nginx
+     state: present
 
-- name: enable
-  ansible.builtin.package:
-    name: nginx
-    state: present
-    enabled: yes
+  - name: enable
+    ansible.builtin.package:
+     name: nginx
+     state: present
+     enabled: yes
