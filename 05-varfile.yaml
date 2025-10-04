@@ -1,15 +1,15 @@
-- name: read variables file
-  hosts: local
+- name: Read variables file
+  hosts: localhost
   connection: local
-  become : yes
-  readfiles:
-   - course.yaml
-  
+  become: yes
+  vars_files:
+    - course.yaml
+
   tasks:
-   - name : printing after task
-     ansible.builtin.debug:
-      msg : "{{course}}"
-    
+    - name: Print course variable (as loaded)
+      ansible.builtin.debug:
+        var: course
 
-   
-
+    - name: Print formatted course info
+      ansible.builtin.debug:
+        msg: "Course: {{ course }}, Duration: {{ duration }}, Fee: {{ fee }}, Trainer: {{ trainer_name }}, Mobile: {{ mobile_number }}, Mail: {{ mailid }}"
