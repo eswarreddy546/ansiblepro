@@ -3,7 +3,7 @@
   connection: local
   become : yes
   course:
-    course.yaml
+  - course.yaml
   
   tasks:
    - name : printing after task
