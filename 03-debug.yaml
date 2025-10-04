@@ -8,15 +8,15 @@
 
    - name : printing paly1.1
      ansible.builtin.debug:
-      msg: "hello world debug1 "
+      msg: "hello world debug1.1 "
 
 - name : debuging
   hosts: frontend
   tasks : 
    - name: priniting play2
      ansible.builtin.debug:
-      msg: "hello world debug1"
+      msg: "hello world debug2"
 
    - name : printing paly2.11
      ansible.builtin.debug:
-      msg: "hello world debug1"
+      msg: "hello world debug2.2"
