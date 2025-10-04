@@ -1,6 +1,6 @@
-- name: Values declare in playbook
+- name: Values declare in playbook (local)
   become: yes
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     course: DevOps
@@ -8,6 +8,6 @@
     trainer: Eswar
 
   tasks:
-    - name: Printing the courses
+    - name: Printing the courses (local)
       ansible.builtin.debug:
         msg: "Course name is: {{ course }}, Duration: {{ duration }}, Trainer: {{ trainer }}"
