@@ -8,7 +8,7 @@
 
    - name : printing paly1.1
      ansible.builtin.debug:
-     msg: "hello world debug1"
+      msg: "hello world debug1 "
 
 - name : debuging
   hosts: frontend
