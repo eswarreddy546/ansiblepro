@@ -6,12 +6,12 @@
 
 
   - name: install 
-    ansible.builtin.package:
+    ansible.builtin.service:
      name: nginx
      state: present
 
   - name: enable
-    ansible.builtin.package:
+    ansible.builtin.service:
      name: nginx
      state: present
      enabled: yes
