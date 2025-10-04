@@ -18,4 +18,5 @@
       msg: "hello world debug1"
 
    - name : printing paly2.11
-     msg: "hello world debug1"
+     ansible.builtin.debug:
+      msg: "hello world debug1"
