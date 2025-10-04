@@ -1,0 +1,16 @@
+- name: install and enable nginx
+  hosts: frontend
+  tasks:
+  - name: install
+    .builtin.ping:
+
+- name : install 
+  ansible.builtin.package:
+    name: nginx
+    state: present
+
+- name : enable
+  ansible.builtin.package:
+    name: nginx
+    state: present
+    enabled: yes
