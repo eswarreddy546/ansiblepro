@@ -1,12 +1,12 @@
-- name : values declare in playbook
-  become : yes
-  hosts : frontend
-  vars :
-    course : DevOps
-    duration : 2 months
-    trainer : Eswar
+- name: Values declare in playbook
+  become: yes
+  hosts: frontend
+  vars:
+    course: DevOps
+    duration: 2 months
+    trainer: Eswar
 
   tasks:
-    - name : printing the courses
+    - name: Printing the courses
       ansible.builtin.debug:
-       msg : " course name is :{{course}}, {{duration}}, {{trainer}}"
+        msg: "Course name is: {{ course }}, Duration: {{ duration }}, Trainer: {{ trainer }}"
