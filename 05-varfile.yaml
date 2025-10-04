@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   become : yes
-  course:
-  - course.yaml
+  readfiles.yaml:
+   - course.yaml
   
   tasks:
    - name : printing after task
