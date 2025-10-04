@@ -1,7 +1,7 @@
 - name: Values declare in playbook
   become: yes
   hosts: local
-  connections: local
+  connection: local
   vars:
     course: DevOps
     duration: 2 months
