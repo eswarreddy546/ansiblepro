@@ -1,0 +1,16 @@
+- name : debuging
+  hosts: frontend
+  tasks : 
+   - name: priniting play1
+     ansible.builtin.debug:
+
+   - name : printing paly1.1
+     ansible.builtin.debug:
+
+- name : debuging
+  hosts: frontend
+  tasks : 
+   - name: priniting play2
+     ansible.builtin.debug:
+
+   - name : printing paly2.11
