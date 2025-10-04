@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   become : yes
-  readfiles.yaml:
+  readfiles:
    - course.yaml
   
   tasks:
