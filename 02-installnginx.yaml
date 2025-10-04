@@ -9,9 +9,10 @@
     ansible.builtin.service:
      name: nginx
      state: present
-
-  - name: enable
-    ansible.builtin.service:
-     name: nginx
-     state: present
      enabled: yes
+
+  #- name: enable
+    #ansible.builtin.service:
+     #name: nginx
+     #state: present
+     #enabled: yes
