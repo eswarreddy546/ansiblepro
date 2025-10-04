@@ -1,16 +1,21 @@
 - name : debuging
   hosts: frontend
+  become : yes
   tasks : 
    - name: priniting play1
      ansible.builtin.debug:
+     msg: "hello world debug1"
 
    - name : printing paly1.1
      ansible.builtin.debug:
+     msg: "hello world debug1"
 
 - name : debuging
   hosts: frontend
   tasks : 
    - name: priniting play2
      ansible.builtin.debug:
+     msg: "hello world debug1"
 
    - name : printing paly2.11
+     msg: "hello world debug1"
