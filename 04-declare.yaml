@@ -1,10 +1,10 @@
 - name : values declare in playbook
-  becomes : yes
+  become : yes
   hosts : frontend
   vars :
-     course : DevOps
-     duration : 2 months
-     trainer : Eswar
+    course : DevOps
+    duration : 2 months
+    trainer : Eswar
 
   tasks:
     - name : printing the courses
