@@ -2,7 +2,8 @@
   hosts: frontend
   tasks:
   - name: install
-    .builtin.ping:
+    ansible.builtin.package:
+
 
 - name : install 
   ansible.builtin.package:
